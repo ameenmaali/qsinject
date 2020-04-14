@@ -1,4 +1,4 @@
-# qsfuzz
+# qsinject
 
 qsinject (Query String Inject) is a tool that allows you to quickly substitute query string values with regex matches, one-at-a-time. 
 
