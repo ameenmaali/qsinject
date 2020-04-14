@@ -126,3 +126,6 @@ Replace URLs in "Dumb" mode, injecting a list of query strings one-at-a-time in 
 Replace URLs with a rule config file, include all results (even if unaltered), and include values decoded:
 
 `cat urls.txt | qsinject -c rules.yaml -iu -decode`
+
+## Thanks
+* Some of this code, particularly the deduplication logic, was inspired by Tomnomnom's [qsreplace](https://github.com/tomnomnom/qsreplace)
