@@ -1,0 +1,13 @@
+rules:
+  UrlUpdate:
+    regex: '^http(s)?:\/\/.+'
+    replacement: 'https://example.net/home'
+    append: false
+  XSS:
+    regex: '^[a-zA-Z0-9]+$'
+    replacement: '"><h2>asd</h2>'
+    append: true
+  SqlInjection:
+    regex: '^[a-zA-Z0-9]+$'
+    replacement: "'"
+    append: true
