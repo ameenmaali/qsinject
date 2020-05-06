@@ -127,5 +127,9 @@ Replace URLs with a rule config file, include all results (even if unaltered), a
 
 `cat urls.txt | qsinject -c rules.yaml -iu -decode`
 
+Get unique URLs and query string combinations (i.e. remove duplicates with differing param values), simply pass in a non-existent match and replace rule with `-iu` flag
+
+`cat urls.txt | qsinject -iu -m "12312312312312" -r "12321312312213"`
+
 ## Thanks
 * Some of this code, particularly the deduplication logic, was inspired by Tomnomnom's [qsreplace](https://github.com/tomnomnom/qsreplace)
